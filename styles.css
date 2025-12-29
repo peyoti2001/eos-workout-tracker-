@@ -1,14 +1,17 @@
 /* Minimal, phone-friendly, dark UI (similar vibe to your screenshots) */
 :root{
-  --bg:#0b0d10;
-  --card:#12161c;
-  --card2:#0f1318;
-  --text:#eef3f6;
-  --muted:#a7b2bd;
-  --line:#1f2832;
-  --accent:#0aa6a6;
-  --danger:#d84c4c;
-  --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --bg:#F6F8FF;
+  --card:#FFFFFF;
+  --card2:#F3F6FF;
+  --text:#0D1321;
+  --muted:#51607A;
+  --line: rgba(13,19,33,.10);
+
+  --accent:#0AA6A6;     /* teal */
+  --accent2:#FFB703;    /* warm highlight */
+  --danger:#E63946;
+
+  --shadow: 0 10px 25px rgba(13,19,33,.12);
   --radius: 18px;
 }
 
@@ -17,7 +20,10 @@ html,body{height:100%}
 body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-  background: radial-gradient(1200px 600px at 50% -10%, rgba(10,166,166,.18), transparent 60%), var(--bg);
+  background:
+    radial-gradient(900px 500px at 10% 0%, rgba(10,166,166,.20), transparent 55%),
+    radial-gradient(900px 500px at 90% 0%, rgba(255,183,3,.18), transparent 55%),
+    var(--bg);
   color:var(--text);
 }
 
